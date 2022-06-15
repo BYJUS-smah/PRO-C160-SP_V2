@@ -28,30 +28,30 @@ AFRAME.registerComponent("tour", {
         position: { x: 20, y: -4.5, z: -5.5 },
         rotation: { x: 0, y: -90, z: 0 },
         src: "./assets/thumbnails/garden.png",
-        title: "Garden",
+        title: "Jardin",
         id: "garden"
       },
       main_gate: {
         position: { x: 4.6, y: -5.5, z: 25 },
-        rotation: { x: 180, y: 0, z: 0 },
+        rotation: { x: 180, y: 0, z: 180 },
         src: "./assets/thumbnails/main_gate.png",
-        title: "Main Gate",
+        title: "Puerta principal",
         id: "main_gate"
       },
       home: {
         position: { x: -9, y: 34, z: -100 },
         rotation: { x: 0, y: 0, z: 0 },
         src: "./assets/thumbnails/home.png",
-        title: "My Home",
+        title: "Mi hogar",
         id: "home"
       }
     };
 
     for (var key in details) {
       const item = details[key];
-      // Thubnail Element
+      // Elemento de miniatura.
       const thumbNail = this.createThumbNail(item);
-      // Title
+      // Título.
       const title = this.createTitleEl(item);
       thumbNail.appendChild(title);
       this.placesContainer.appendChild(thumbNail);
