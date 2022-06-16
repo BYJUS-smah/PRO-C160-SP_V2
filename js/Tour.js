@@ -86,8 +86,8 @@ AFRAME.registerComponent("tour", {
     const position = { x: 0, y: -4, z: 0 };
     entityEl.setAttribute("position", position);
 
-    if (item.title === "Main Gate") {
-      entityEl.setAttribute("rotation", { x: 180, y: 180, z: 0 });
+    if (item.title === "Puerta principal") {
+      entityEl.setAttribute("rotation", { x: 180, y: 180, z: 180 });
       entityEl.setAttribute("position", { x: 0, y: 4, z: 0 });
     }
     entityEl.setAttribute("visible", true);
